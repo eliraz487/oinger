@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Drawer button/icon with text -->
+  <div class="drawer-btn-container">
+    <div lang="he" dir="rtl" class="drawer-btn-text">Drawer Text</div>
+    <div class="drawer-btn" onclick="toggleDrawer()"><span>&#9776;</span></div>
+  </div>
+
+  <!-- Drawer menu -->
+  <div lang="he" dir="rtl" class="drawer" id="drawer">
+    <a href="#" onclick="changeAdditionalInfo('אפשרות 1')">אפשרות 1</a>
+    <a href="#" onclick="changeAdditionalInfo('אפשרות 2')">אפשרות 2</a>
+    <a href="#" onclick="changeAdditionalInfo('אפשרות 3')">אפשרות 3</a>
+  </div>
+
+  <!-- Info panel -->
+  <div class="info-panel" id="infoPanel">
+    <div class="info-text" id="additionalInfo">Additional Info</div>
+    <!-- Image icon -->
+    <img class="info-image" src="file:\\\‪C:\Users\manra\source\repos\phalik696\phalik696.Android\Resources\drawable\phalik.png" alt="Info Icon">
+  </div>
+
+  <!-- Computers list container -->
+  <div class="computers-list-container" id="computersListContainer">
+    <!-- Computers list -->
+    <ul class="computers-list" id="computersList">
+      <!-- Computers will be dynamically added here using JavaScript -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
